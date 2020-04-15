@@ -9,7 +9,7 @@ fetchAndVisualizeData();
 function abc() {
   var yearId = document.getElementById("year-input").value;
   console.log(yearId);
-  fetch("http://localhost:3000/abc/"+ yearId)
+  fetch("https://ipl-123.herokuapp.com/abc/"+ yearId)
   .then((response) => {
     return response.json()
   })
