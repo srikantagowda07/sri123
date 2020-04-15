@@ -9,9 +9,9 @@ fetchAndVisualizeData();
 function abc() {
   var yearId = document.getElementById("year-input").value;
   console.log(yearId);
-  fetch("https://ipl-123.herokuapp.com/abc/"+ yearId)
-  .then((response) => {
-    return response.json()
+  fetch("http://localhost:3000/abc/"+ yearId)
+  .then((r) => {
+    return r.json()
   })
   .then(data => {
     visualizeeconomicalBowler(data);
@@ -21,8 +21,8 @@ function abc() {
 function visualizeeconomicalBowler(economicalBowler) {
   const seriesData = [];  
   var yearId = document.getElementById("year-input").value;
-  for (let team in economicalBowler) {
-    seriesData.push([team, economicalBowler[team]]);
+  for (let player in economicalBowler) {
+    seriesData.push([player, economicalBowler[player]]);
   }
   Highcharts.chart("visualizeeconomicalBowler", {
     chart: {
