@@ -56,7 +56,7 @@ app.use(function(req, res, next) {
     next();
   });
 
-  app.use(express.static('public'));
+ app.use(express.static('public'));
 app.get('/abc/:yearId', (req, res) => {
 
   function economicalBowler(matches,deliveries) {
@@ -118,11 +118,12 @@ function main() {
       .then(matches => {
         let result={};
         csv()
-        .fromFile(DELIVERIES_FILE_PATH)
+        .fromFile(DELIVERIES_FILE_PATH) 
         .then(deliveries =>{
           result = economicalBowler(matches,deliveries);
           finalResult1 = JSON.stringify(result);
           res.send(finalResult1);
+          console.log(finalResult1)
     }); 
    });
   }

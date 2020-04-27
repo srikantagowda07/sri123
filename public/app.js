@@ -9,11 +9,13 @@ fetchAndVisualizeData();
 function abc() {
   var yearId = document.getElementById("year-input").value;
   console.log(yearId);
-  fetch("https://sri-ipl-analysis-9279.herokuapp.com/abc/"+ yearId)
+  fetch("http://localhost:3000/abc/"+ yearId)
   .then((r) => {
+    console.log(r)
     return r.json()
   })
   .then(data => {
+    console.log(data)
     visualizeeconomicalBowler(data);
   });
 }
