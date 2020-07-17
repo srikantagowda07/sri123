@@ -16,5 +16,3 @@ function winningTeamPerVenue(matches) {
   return results;
 }
 module.exports = winningTeamPerVenue;
-
-
