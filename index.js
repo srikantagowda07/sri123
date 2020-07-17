@@ -11,7 +11,7 @@ const Toss_MatchWinners = require("./ipl/Toss_MatchWinners");
 const man_of_The_Match = require("./ipl/man_of_The_Match");
 const strike_Rate = require("./ipl/strike_Rate");
 const best_Econ_Superover = require("./ipl/best_Econ_Superover");
-const dismissed =  require("./ipl/dismissed");
+const dismissed = require("./ipl/dismissed");
 
 const MATCHES_FILE_PATH = "./csv_data/matches.csv";
 const DELIVERIES_FILE_PATH = "./csv_data/deliveries.csv";
@@ -26,10 +26,10 @@ function main() {
       csv()
         .fromFile(DELIVERIES_FILE_PATH)
         .then(deliveries => {
-          let result2 = Extra_Runs(deliveries);
+          let result2 = Extra_Runs(deliveries, matches);
           finalResult['Extra_Runs'] = result2;
 
-          let resulteconomicalBowler = economicalBowler(deliveries,matches);
+          let resulteconomicalBowler = economicalBowler(deliveries, matches);
           finalResult['economicalBowler'] = resulteconomicalBowler;
 
           let resultsToss_MatchWinners = Toss_MatchWinners(matches);
@@ -52,9 +52,9 @@ function main() {
 
           let reslultman_of_The_Match = man_of_The_Match(matches);
           finalResult2['man_of_The_Match'] = reslultman_of_The_Match;
-         
-          
-          let resultstrike_Rate = strike_Rate(deliveries,matches);
+
+
+          let resultstrike_Rate = strike_Rate(deliveries, matches);
           finalResult2['strike_Rate'] = resultstrike_Rate;
 
           let resultbest_Econ_Superover = best_Econ_Superover(deliveries);

@@ -1,13 +1,13 @@
 {
     "Extra_Runs": {
-        "Rising Pune Supergiants": 108,
-        "Mumbai Indians": 102,
-        "Kolkata Knight Riders": 122,
-        "Delhi Daredevils": 106,
-        "Gujarat Lions": 98,
-        "Kings XI Punjab": 100,
-        "Sunrisers Hyderabad": 107,
-        "Royal Challengers Bangalore": 156
+        "Kolkata Knight Riders": 117,
+        "Mumbai Indians": 124,
+        "Delhi Daredevils": 100,
+        "Chennai Super Kings": 99,
+        "Kings XI Punjab": 116,
+        "Rajasthan Royals": 148,
+        "Sunrisers Hyderabad": 108,
+        "Royal Challengers Bangalore": 114
     },
     "economicalBowler": {
         "RN ten Doeschate": 3.4285714285714284,
@@ -354,13 +354,13 @@
         "CH Gayle": 21,
         "AB de Villiers": 20,
         "MS Dhoni": 17,
-        "DA Warner": 17,
         "RG Sharma": 17,
+        "DA Warner": 17,
         "YK Pathan": 16,
         "SR Watson": 15,
         "SK Raina": 14,
         "G Gambhir": 13,
-        "MEK Hussey": 12
+        "V Kohli": 12
     },
     "Match_Winners": {
         "2008": {
